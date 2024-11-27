@@ -1,0 +1,50 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #242424;
+    color: #e7e7e7;
+    margin: 20px;
+}
+
+.title{
+    /* font-size: 20px; */
+    font-size: 2em; /*em medida relativa al tamaño de fuente base del sitio en el que estamos trabajando deacuerdo al tamaño que establece el navegador*/
+    color:white;
+}
+.button{
+    color: brown;
+}
+
+.logo{
+    width: 200px;
+}
+/*Importante determinar bien en qué momentos te conviene utilizar clases y cuándo id. Esto te ayudará a ordenar y unificar tus estilos.
+Recuerda que dar bordes y colores de fondo a tus elementos puede ser un buen truco para saber dónde están y qué tamaño ocupan al 
+momento de posicionarlos. Luego puedes remover los estilos que no quieres que queden.*/
+.cards{
+    border: 2px solid white;
+    width: fit-content;/* fit content ajusto el ancho al ancho de mi contenido*/
+    padding: 0em 1em 1em 1em;
+    border-radius: 15%;
+    transition: 1s; /*Esta propiedad hace que la propiedad del pseudo-selector se realice en 1 segundo*/
+}
+/*pseudo-selector*/
+.cards:hover{
+    background-color: rgb(167, 173, 173);
+}
+
+.text{
+    color: white;
+}
+
+#principal{
+    font-size: 50px;
+}
+
+#titulos{
+    border: 2px solid white;
+    width: 60vw;/*vw viewport width 65% de la pantalla del ancho donde este*/
+    /*margin: 2em; que tanto se va a distanciar este elemento de los bordes */
+    margin: auto; /*se va a distanciar este elemento de los bordes de forma proporcional */
+    padding: 3em;
+
+}

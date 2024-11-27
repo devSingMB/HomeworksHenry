@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Mi página web</title>
+        <title>ProtafolioWEB</title>
+        <link rel="stylesheet" type="text/css" href="./styles.css" />
     </head>
-    <body>
+    <body >
         <header>
-            <h1>Este es el título principal de mi sitio web</h1>
+            <div id="titulos">
+                <h1 class="title" id="principal">Portafolio</h1>
+                <h2 class="title">Mario Buchely</h2>               
+            </div>
    
-           <span>Home</span>
-           <span>Noticias</span>
-           <span>Contacto</span>            
+           <span class="button">Home</span>
+           <span class="button">Noticias</span>
+           <span class="button">Contacto</span>      
         </header>
 
         <main>
 
-            <img src="./1732284409432.jpg" alt="">
+            <img src="./nombreDeLaImagen.jpg" alt=""> <!-- la imagen deberá preferiblement estar almacenada en la carpeta de trabajo -->
 
             <section>
-                <h2>Este es un título de una sección de noticias</h2>
+                <h2 class="title">Desarrollador FullStack y Diseñador Gráfico UX/UI</h2>
                 <article>
-                    <h3>Esta es la noticia No1</h3>
+                    <h3 class="title">Desarrollador FullStack y Diseñador UX/UI</h3>
 
-                    <div>
-                        <p>Este será el primer parrafo de mi noticia</p>
+                    <div class="text">
+                        <p >Este será el primer parrafo de mi noticia</p>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                            Officia maxime facilis ratione repudiandae earum at aliquid
                            eum eligendi voluptates, quae iure, 
@@ -33,25 +37,48 @@
                        <hr />
 
                 <article>
-                    <h3>Esta es la noticia No2</h3>
-                    <p>Este será el primer parrafo de mi noticia</p>
-                    <ol>
-                        <li>Este es el item1</li>
-                        <li>Este es el item2</li>
-                        <li>Este es el item3</li>
-                    </ol>
+                    <div class="cards">
+                        <h3 class="title">HTML</h3>
+                        <img src="./html.png" class="logo">
+                        <p>Este será el primer parrafo de mi noticia</p>
+                        <ul>
+                            <li>Este es el item1</li>
+                            <li>Este es el item2</li>
+                            <li>Este es el item3</li>
+                        </ul>
+                    </div>
+                </article>      
+                <hr />
+
+                <article>
+                    <div class="cards">
+                        <h3 class="title">CSS</h3>
+                        <img src="./css.png" class="logo">
+                        <p>Este será el primer parrafo de mi noticia</p>
+                        <ul>
+                            <li>Este es el item1</li>
+                            <li>Este es el item2</li>
+                            <li>Este es el item3</li>
+                        </ul>
+                    </div>
+                </article>      
+                <hr />
+
+                <article>
+                    <div class="cards">
+                        <h3 class="title">JavaScript</h3>
+                        <img src="./js.png" class="logo">
+                        <p>Este será el primer parrafo de mi noticia</p>
+                        <ul>
+                            <li>Este es el item1</li>
+                            <li>Este es el item2</li>
+                            <li>Este es el item3</li>
+                        </ul>
+                    </div>
                 </article>      
                 <hr />
                 
-                <article>
-                    <h3>Esta es la noticia No3</h3>
-                    <p>Este será el primer parrafo de mi noticia</p>
-                    <ul>
-                       <li>ESte es un elmento</li>
-                       <li>ESte es un elmento adicional</li>
-                       <li>ESte es un otro elemento adicional</li>
-                    </ul>
-                </article>
+                
             </section>
         </main>
 
