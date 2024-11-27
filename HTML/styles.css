@@ -26,6 +26,9 @@ momento de posicionarlos. Luego puedes remover los estilos que no quieres que qu
     padding: 0em 1em 1em 1em;
     border-radius: 15%;
     transition: 1s; /*Esta propiedad hace que la propiedad del pseudo-selector se realice en 1 segundo*/
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 }
 /*pseudo-selector*/
 .cards:hover{
@@ -46,5 +49,20 @@ momento de posicionarlos. Luego puedes remover los estilos que no quieres que qu
     /*margin: 2em; que tanto se va a distanciar este elemento de los bordes */
     margin: auto; /*se va a distanciar este elemento de los bordes de forma proporcional */
     padding: 3em;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Cuando trabajamos con flexbox no trabajamos directamente sobre los elementos si no sobre el contenedor de esos elementos*/
+#cards-container{
+    background-color: #994343;
+    width: 85vw; /*un 85% del ancho de la pantalla*/
+    margin: auto;
+    margin-top: 1.5em;
+    border: 2px solid greenyellow;
+    border-radius: 15px;
+    padding: 2em;
+    display: flex;/*con esta propiedad le estamos asignado una regla en la cual apartir de ahora vas segir la logica de flex para organizar el contenido*/
+    flex-direction: row;
+    justify-content: space-evenly;
 }
